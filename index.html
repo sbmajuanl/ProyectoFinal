@@ -6,17 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body>
-  <form action="" onsubmit="enviardatos();return false;">
+<body class = "contenedor-contenido-pagina">
   <div class="dropdown" align="right">Hola Maria
   	<button onclick="myFunction()" class="dropbtn">&#9776;</button>
   	<div id="myDropdown" class="dropdown-content">
-  		<a href="#">Perfil</a>
+  		<a href="coder.html">Perfil</a>
   		<a href="#l">Salir</a>
   	</div>
   </div>
   <div align=center>
-	  <img src="assets/images/images.png" alt="" class="mensaje">
+	  <img src="assets/images/images.png">
   </div>
   </br><h3><strong>¿Qué es Laboratoria?</strong></h3>
     <p>
@@ -26,14 +25,48 @@
     interdum lorem. Duis sodales ultrices odio non laoreet. Aenean congue massa non aliquet faucibus.Sed rutrum ligula ut massa lobortis, nec
     pulvinar nulla consectetur.Curabitur ornare dui nisl. Aliquam ut nisi quis diam porta mollis.
     </p>
-    <div class="todo">
     <h4>Temas</h4>
-    <div class="preguntas">
-      <button class="sp" id="sprint1">Sprint1</button>
-      <button class="sp" id="sprint2">Sprint2</button>
-      <button class="sp" id="sprint3">Sprint3</button>
+  <div>
+    <input type="submit" id="sprint1" value="Sprint1" onclick="Sprint('text1')">
+    <input type="submit" id="sprint2" value="Sprint2" onclick="Sprint('text2')">
+    <input type="submit" id="sprint3" value="Sprint3" onclick="Sprint('text3')">
+  </div>
+    <div id="text1">
+    <h3>Sprint 1:Introducción al Desarrollo Web</h3>
+      <ol>
+        <li>Fundamentos de programación</li>
+        <li>Funciones</li>
+        <li>Arreglos</li>
+        <li>Objetos</li>
+      </ol>
+      <hr>
+    <form id="p" onsubmit="validar(p); return false;">
+    <div>
+    <h3>Quiz</h3>
+    <h3>¿Existen dos tipos de funciones?</h3>
+      <input type="radio" class="p" required>Expresadas y declaradas</br>
+      <input type="radio" class="p" required>Explicitas y declaradas</br>
+      <input type="radio" class="p" required>Expresadas y rerivadas
     </div>
-    <div id="datos">
+    <div>
+    <h3>¿Elige una propiedad de los arreglos?</h3>
+      <input type="radio" class="p" required>clear</br>
+      <input type="radio" class="p" required>pop</br>
+      <input type="radio" class="p" required>add
+    </div>
+    <div>
+    <h3>Un objeto tiene ________y _______</h3>
+      <input type="radio" class="p" required>números y letras</br>
+      <input type="radio" class="p" required>partes y validaciones</br>
+      <input type="radio" class="p" required>propiedades y valores
+    </div>
+    <div>
+      <input type="submit" value="Enviar">
+    </div>
+    <div id="enviar1"></div>
+    </form>
+  </div>
+  <div id="text2">
       <h3>Sprint 2: Introducción al desarrollo web y construcción de páginas web</h3>
         <ol>
           <li>Ciclo de vida del desarrollo web</li>
@@ -44,10 +77,35 @@
           <li>DOM</li>
       </ol>
       <hr>
+    <form id="pp" onsubmit="validar(pp);return false;">
+    <div>
+    <h4>¿Cual es tu comando para iniciar un repositorio desde la consola?</h4>
+      <input type="radio"  class = "pp"  required> git init</br>
+      <input type="radio"  class = "pp"  required> git init</br>
+      <input type="radio"  class = "pp"  required> git add init
     </div>
-  <!-- <div id="datos"></div>-->
+    <div>
+      <h4>¿Cual es la finalidad de hacer una prueba unitaria?</h4>
+      <input type="radio"  class = "pp"  required> Comparar que el codigo funciona correctamente</br>
+      <input type="radio"  class = "pp"  required> Darle valores a los parametros de dichas fucniones</br>
+      <input type="radio"  class = "pp"  required> No tiene ningún fin
+    </div>
+    <div >
+      <h4>¿Que significa DOM?</h4>
+      <input type="radio" class = "pp"  required>Dual Object Model</br>
+      <input type="radio" class = "pp"  required> Document Object Model</br>
+      <input type="radio" class = "pp"  required> Document Obsolet Model
+    </div>
+    <div>
+    <input type="submit" value="Enviar">
+    <div>
+    <div id = "enviar2"></div>
+  </form>
+    </div>
+  <div id="text3">
+    <h3>Sprint 3:Introduccion al desarrollo Web</h3>
+    <p>Todavia no hay contenido</p>
   </div>
-    </form>
-    <script src="assets\main.js\main.js"></script>
+  <script src="assets/main.js/main.js"></script>
 </body>
 </html>

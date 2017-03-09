@@ -18,11 +18,11 @@ window.onclick = function(event) {
 var sprint1 = document.getElementById('sprint1');
 var sprint2 = document.getElementById('sprint2');
 var sprint3 = document.getElementById('sprint3');
-var datos = document.getElementById('datos');
+var enviar = document.getElementById('enviar');
 
 
 sprint1.addEventListener('click', function(){
-datos.innerHTML = "<h3>"+"Sprint1: Introducción a Javascript"+"</h3>"+
+enviar1.innerHTML = "<h3>"+"Sprint1: Introducción a Javascript"+"</h3>"+
                     "<ol>"+
                         "<li>"+"Fundamentos de Programación"+"</li>"+
                         "<li>"+"Funciones"+"</li>"+
